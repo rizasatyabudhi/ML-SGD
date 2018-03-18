@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import math as mt
+
+
+dataset = pd.read_csv('irisdata.csv')
+
+dataset['class'] = dataset['class'].str.replace('Iris-setosa','0')
+dataset['class'] = dataset['class'].str.replace('Iris-virginica','1')
+
+
+dataset = dataset.astype('float64')
+dataset
+
